@@ -43,19 +43,19 @@ The implied volatility surface is represented as a 3D plot, with higher volatili
 
 3. 3D Plot Generation: The calculated implied volatilities are plotted as a 3D surface with strike price (or moneyness), time to expiry, and implied volatility.
 
-##Use Cases
+## Use Cases
 
  1. Option Pricing and Hedging: Analyze volatility to understand option price behavior under various market conditions.
  2. Market Sentiment Analysis: Use volatility skews to gauge market sentiment and the perceived risk of price movements.
  3. Scenario Testing: Adjust dividend yield and risk-free rate inputs to test how changes impact the volatility surface.
 
-##Future Enhancements
+## Future Enhancements
 
   1. Integrate additional option pricing models (e.g., binomial tree) for non-European options.
   2. Allow users to save and export the generated volatility surface.
   3. Implement real-time data streaming for live updates.
 
-##License
+## License
 
   This project is open-source and available under the MIT License.
 
