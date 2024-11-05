@@ -27,6 +27,7 @@ The implied volatility surface is represented as a 3D plot, with higher volatili
    cd volatility-surface
 
 2. Install Required Packages: Make sure you have Python 3 installed. Then, install the required Python packages:
+   ```bash
    pip install -r requirements.txt
 
 3. Run the Application: If you're using a Jupyter Notebook, launch the notebook:
@@ -46,13 +47,17 @@ The implied volatility surface is represented as a 3D plot, with higher volatili
 ## Use Cases
 
  1. Option Pricing and Hedging: Analyze volatility to understand option price behavior under various market conditions.
+    
  2. Market Sentiment Analysis: Use volatility skews to gauge market sentiment and the perceived risk of price movements.
+    
  3. Scenario Testing: Adjust dividend yield and risk-free rate inputs to test how changes impact the volatility surface.
 
 ## Future Enhancements
 
   1. Integrate additional option pricing models (e.g., binomial tree) for non-European options.
+     
   2. Allow users to save and export the generated volatility surface.
+     
   3. Implement real-time data streaming for live updates.
 
 ## License
