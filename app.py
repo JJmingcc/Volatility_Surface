@@ -12,7 +12,7 @@ st.sidebar.header('User Inputs')
 #User Inputs
 ticker = st.sidebar.text_input('Ticker', value='SPY')
 risk_free_rate = st.sidebar.number_input('Risk-Free Rate', min_value=0.0, max_value=1.0, value=0.01,  format="%.4f")
-dividend_yield = st.sidebar.number_input('Dividend Yield', min_value=0, max_value=1.0, value=0.001,   format="%.4f")
+dividend_yield = st.sidebar.number_input('Dividend Yield', min_value=0.0, max_value=1.0, value=0.001,   format="%.4f")
 
 # User choice: Moneyness or Strike Price
 option_type = st.sidebar.selectbox('Select Strike Price or Moneyness', ['Strike Price', 'Moneyness'])
