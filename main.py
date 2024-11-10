@@ -10,8 +10,21 @@ import plotly.graph_objects as go
 def get_stock_data(ticker_symbol="SPY", period="1y"):
     stock = yf.Ticker(ticker_symbol)
     spot_prices = stock.history(period=period)["Close"].to_frame()
-    spot_price = stock.history(period="1d")["Close"].iloc[-1]
+
+    # Attempt to get today's spot price safely
+    spot_data = stock.history(period="1d")["Close"]
+
+    if not spot_data.empty:
+        spot_price = spot_data.iloc[-1]
+    else:
+        st.warning(f"No recent data available for ticker {ticker_symbol}. Defaulting to last available price from historical data.")
+        spot_price = spot_prices.iloc[-1, 0] if not spot_prices.empty else None
+
+    if spot_price is None:
+        raise ValueError(f"No data available for ticker {ticker_symbol}. Please check the ticker symbol or try again later.")
+    
     return stock, spot_prices, spot_price
+
 
 def get_options_data(stock):
     expiration_dates = stock.options
