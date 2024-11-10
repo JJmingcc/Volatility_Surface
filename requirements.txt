@@ -1,5 +1,5 @@
-yfinance==0.2.26
-pandas==1.5.3
+yfinance
+pandas
 numpy
 scipy
-plotly==5.15.0
+plotly
