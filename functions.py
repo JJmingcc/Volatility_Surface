@@ -1,14 +1,10 @@
-from enum import Enum
-from dataclasses import dataclass
-from scipy.optimize import newton, brentq
+
+from scipy.optimize import newton
 from datetime import datetime
-import scipy.stats as si
 import numpy as np
 from scipy.stats import norm
 import scipy as sq
 
-
-# Functions of the script
 def Call_BS_Value(S, X, r, T, v, q):
     # Calculates the value of a call option (Black-Scholes formula for call options with dividends)
     # S is the share price at time T
