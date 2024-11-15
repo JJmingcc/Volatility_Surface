@@ -19,6 +19,8 @@ This project visualizes a 3D implied volatility surface for options on any stock
 
 The implied volatility surface is represented as a 3D plot, with higher volatility areas highlighted in warmer colors. This plot allows users to visualize volatility skews and smiles, which are essential for option pricing and risk management.
 
+![volatility_surface](screenshots/volatility_surface.jpg "Volatility Surface Example")
+
 ## Setup Instructions
 
 1. **Clone the Repository**:
